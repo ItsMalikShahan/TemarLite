@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_testCenter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_4sdp"
+        android:layout_margin="@dimen/_10sdp">
+
+        <RelativeLayout
+            android:id="@+id/rl_testCenters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_10sdp">
+
+            <ImageView
+                android:id="@+id/iv_centerLogo"
+                android:layout_width="@dimen/_45sdp"
+                android:layout_height="@dimen/_45sdp"
+                android:src="@drawable/image" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_nextitpro_bold"
+                android:text=""
+                android:id="@+id/tv_centerName"
+                android:textSize="@dimen/_12ssp"
+                android:textColor="#0297AA"
+                android:layout_toEndOf="@id/iv_centerLogo"
+                android:layout_marginStart="@dimen/_15sdp" />
+
+            <ImageView
+                android:id="@+id/iv_locIcon"
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_below="@id/tv_centerName"
+                android:layout_alignStart="@id/tv_centerName"
+                android:src="@drawable/location" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_locationName"
+                android:layout_below="@id/tv_centerName"
+                android:layout_toEndOf="@+id/iv_locIcon"
+                android:layout_marginTop="@dimen/_2sdp"
+                android:text=""
+                android:textSize="@dimen/_12ssp"
+                android:fontFamily="@font/avenir_nextitpro_regular"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tv_centerStatus"
+                android:layout_below="@id/tv_locationName"
+                android:layout_alignStart="@id/tv_centerName"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:text=""
+                android:textSize="@dimen/_12ssp"
+                android:textColor="#15BD0F"
+                />
+
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

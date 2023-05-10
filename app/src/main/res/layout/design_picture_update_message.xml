@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_corner_white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/avenir_nextitpro_regular"
+            android:text="Updated Successfully"
+            android:textColor="@color/dusk"
+            android:textSize="@dimen/_10ssp" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/_9sdp"
+            android:layout_height="@dimen/_9sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:src="@drawable/close" />
+
+        <ImageView
+            android:id="@+id/iv_dash"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/iv_close"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/horizental_dash_line" />
+
+        <ImageView
+            android:id="@+id/iv_check"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"
+            android:layout_below="@id/iv_dash"
+            android:layout_centerInParent="true"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_30sdp"
+            android:src="@drawable/double_check" />
+
+        <ImageView
+            android:id="@+id/iv_dash1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_below="@id/iv_check"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/horizental_dash_line" />
+
+        <TextView
+            android:id="@+id/tv_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_dash1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/avenir_nextitpro_regular"
+            android:text="Profile picture is updated successfully!"
+            android:textSize="@dimen/_12ssp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_dialogOk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_message"
+        android:background="@drawable/dialoge_corner_gray">
+
+        <Button
+            android:id="@+id/btn_pok"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@drawable/btn_corner"
+            android:fontFamily="@font/avenir_nextitpro_bold"
+            android:text="OK"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_10ssp" />
+
+    </RelativeLayout>
+</RelativeLayout>

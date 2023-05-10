@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dialog_corner">
+
+    <RelativeLayout
+        android:id="@+id/rl_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/dialog_corner_white">
+
+        <TextView
+            android:id="@+id/tv_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:fontFamily="@font/avenir_nextitpro_regular"
+            android:text="Logout"
+            android:textColor="@color/dusk"
+            android:textSize="@dimen/_11ssp" />
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="@dimen/_9sdp"
+            android:layout_height="@dimen/_9sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginEnd="@dimen/_12sdp"
+            android:src="@drawable/close" />
+
+        <TextView
+            android:id="@+id/userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_logout"
+            android:layout_centerInParent="true"
+
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/avenir_nextitpro_regular"
+            android:text="Do you want to logout?"
+            android:textColor="@color/dusk"
+            android:textSize="@dimen/_10ssp" />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_logout"
+        android:background="@drawable/dialoge_corner_gray"
+        android:weightSum="1.0"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_all"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:background="@drawable/btn_corner"
+            android:fontFamily="@font/avenir_nextitpro_bold"
+            android:text="From All Devices"
+            android:textSize="@dimen/_10ssp"
+            android:textAllCaps="false"
+            android:layout_weight="0.5"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/btn_this"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:layout_weight="0.5"
+            android:background="@drawable/btn_corner"
+            android:fontFamily="@font/avenir_nextitpro_bold"
+            android:text="From This Device"
+            android:textAllCaps="false"
+            android:textSize="@dimen/_10ssp"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>

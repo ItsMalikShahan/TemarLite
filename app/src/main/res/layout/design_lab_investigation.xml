@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <CheckBox
+        android:id="@+id/cb_renel"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_25sdp"
+        android:fontFamily="@font/avenir_nextitpro_regular"
+        android:text=""
+        android:textColor="@color/dusk"
+        android:textSize="@dimen/_12ssp" />
+
+    <CheckBox
+        android:id="@+id/cb_total"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_below="@id/cb_renel"
+        android:fontFamily="@font/avenir_nextitpro_regular"
+        android:text=""
+        android:textColor="@color/dusk"
+        android:textSize="@dimen/_12ssp" />
+
+    <CheckBox
+        android:id="@+id/cb_liver"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_below="@id/cb_total"
+        android:fontFamily="@font/avenir_nextitpro_regular"
+        android:text=""
+        android:textColor="@color/dusk"
+        android:textSize="@dimen/_12ssp" />
+
+    <CheckBox
+        android:id="@+id/cb_ionize"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_below="@id/cb_liver"
+        android:fontFamily="@font/avenir_nextitpro_regular"
+        android:text=""
+        android:textColor="@color/dusk"
+        android:textSize="@dimen/_12ssp" />
+
+    <CheckBox
+        android:id="@+id/cb_cbc"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_below="@id/cb_ionize"
+        android:fontFamily="@font/avenir_nextitpro_regular"
+        android:text=""
+        android:textColor="@color/dusk"
+        android:textSize="@dimen/_12ssp" />
+
+    <CheckBox
+        android:id="@+id/cb_ci"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/_25sdp"
+        android:layout_below="@id/cb_cbc"
+        android:fontFamily="@font/avenir_nextitpro_regular"
+        android:text=""
+        android:textColor="@color/dusk"
+        android:textSize="@dimen/_12ssp" />
+
+    <ImageView
+        android:id="@+id/iv_horizentalLine2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_below="@id/cb_ci"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_5sdp"
+        android:background="@drawable/horizental_line" />
+</RelativeLayout>

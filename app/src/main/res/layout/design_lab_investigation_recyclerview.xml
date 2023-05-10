@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_labInvestigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_10sdp"
+        app:cardCornerRadius="@dimen/_5sdp">
+
+        <RelativeLayout
+            android:id="@+id/rl_labInvestigation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/_8sdp">
+
+            <TextView
+                android:id="@+id/tv_prescribedBy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/avenir_nextitpro_regular"
+                android:text="Prescribed By"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tv_doctorName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_prescribedBy"
+                android:fontFamily="@font/avenir_nextitpro_regular"
+                android:padding="@dimen/_2sdp"
+                android:text=""
+                android:textColor="@color/dusk"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tv_visitTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_prescribedBy"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/avenir_nextitpro_regular"
+                android:text="Visit Time"
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tv_dateTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/tv_doctorName"
+                android:layout_alignParentEnd="true"
+                android:fontFamily="@font/avenir_nextitpro_regular"
+                android:padding="@dimen/_2sdp"
+                android:text=""
+                android:textColor="@color/dusk"
+                android:textSize="@dimen/_12ssp" />
+
+            <ImageView
+                android:id="@+id/dash"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_below="@id/tv_dateTime"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@drawable/horizental_dash_line" />
+
+            <TextView
+                android:id="@+id/testName"
+                android:layout_width="@dimen/_180sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_below="@id/dash"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="@dimen/_2sdp"
+                android:fontFamily="@font/avenir_nextitpro_regular"
+                android:padding="@dimen/_2sdp"
+                android:text=""
+                android:textColor="#0297AA"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/tv_report"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/testName"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_toEndOf="@id/testName"
+                android:fontFamily="@font/avenir_nextitpro_regular"
+                android:text=""
+                android:textSize="@dimen/_12ssp" />
+
+            <TextView
+                android:id="@+id/tv_prescribed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/testName"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:fontFamily="@font/avenir_nextitpro_regular"
+                android:text=""
+                android:textSize="@dimen/_12ssp" />
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

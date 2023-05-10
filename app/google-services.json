@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "16948800575",
+    "project_id": "temardar-lite-34d13",
+    "storage_bucket": "temardar-lite-34d13.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:16948800575:android:6bbd5a5fd2f0b792471c8a",
+        "android_client_info": {
+          "package_name": "com.example.practise"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "16948800575-6kcakmgn6uh7e6199jc3lhebgjgvvf0n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDJ6lYJ45w7yhqfTki7LUGGXiDFshp-Q-Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "16948800575-6kcakmgn6uh7e6199jc3lhebgjgvvf0n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

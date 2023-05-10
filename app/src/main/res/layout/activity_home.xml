@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_dim"
+    tools:context=".Activity.HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/rl_hPersonal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_275sdp"
+        android:background="@drawable/ic_bg_vector">
+
+        <com.synnapps.carouselview.CarouselView
+            android:id="@+id/cv_slider1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_180sdp"
+            app:indicatorGravity="bottom"
+            app:indicatorOrientation="horizontal"
+            app:radius="@dimen/_1sdp" />
+
+        <ImageView
+            android:id="@+id/iv_hMenu"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:onClick="ShowPopUp"
+            android:src="@drawable/menu_dark_blue" />
+
+        <TextView
+            android:id="@+id/tv_hTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cv_slider1"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:fontFamily="@font/avenir_nextitpro_regular"
+            android:text="Hi"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_hTitle"
+            android:layout_alignTop="@id/tv_hTitle"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:fontFamily="@font/avenir_nextitpro_bold"
+            android:text=" "
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/tv_hGreeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_hTitle"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:fontFamily="@font/avenir_nextitpro_regular"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+        <TextView
+            android:id="@+id/tv_hCnic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_hGreeting"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:fontFamily="@font/avenir_nextitpro_regular"
+            android:text="CNIC No. "
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+        <TextView
+            android:id="@+id/tv_cnic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/tv_hCnic"
+            android:layout_alignTop="@id/tv_hCnic"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:fontFamily="@font/avenir_nextitpro_bold"
+            android:text=" "
+            android:textColor="@color/white"
+            android:textSize="@dimen/_12ssp" />
+
+
+        <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/iv_myPic"
+            android:layout_width="@dimen/_60sdp"
+            android:layout_height="@dimen/_60sdp"
+            android:layout_below="@id/cv_slider1"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginEnd="@dimen/_10sdp"
+            android:src="@drawable/image"
+            app:riv_corner_radius="6dip" />
+
+        <ImageView
+            android:id="@+id/tv_editProfile"
+            android:layout_width="@dimen/_20sdp"
+            android:layout_height="@dimen/_20sdp"
+            android:layout_alignEnd="@id/iv_myPic"
+            android:layout_alignBottom="@id/iv_myPic"
+            android:layout_marginEnd="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:src="@drawable/ic_edit2" />
+
+    </RelativeLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_hAppointment"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@id/rl_hPersonal"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="-20dp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_5sdp"
+        app:cardElevation="@dimen/_5sdp">
+
+        <LinearLayout
+            android:id="@+id/ll_hAppPhar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:weightSum="1.0">
+
+            <LinearLayout
+                android:id="@+id/ll_hAppointment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/iv_hAppointment"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:src="@drawable/ic_appointment_sml_blue" />
+
+                <TextView
+                    android:id="@+id/tv_hAppointment"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_nextitpro_regular"
+                    android:text="@string/hAppointment"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="@dimen/_1sdp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/gray" />
+
+            <LinearLayout
+                android:id="@+id/ll_hReports"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_HReports"
+                    android:layout_width="@dimen/_15sdp"
+                    android:layout_height="@dimen/_25sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:src="@drawable/ic_report" />
+
+                <TextView
+                    android:id="@+id/tv_hReports"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenir_nextitpro_regular"
+                    android:text="Reports"
+                    android:textSize="@dimen/_12ssp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:id="@+id/sv_home"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv_hAppointment">
+
+        <RelativeLayout
+            android:id="@+id/rl_cards"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:id="@+id/ll_hCardView0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_hSearchDoctor"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_85sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:background="@drawable/ic_cardview_corner"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_hSearchDoctor"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/iv_hSearchDoctor"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/ic_search_doctor" />
+
+
+                        <ImageView
+                            android:id="@+id/iv_hRightArrow0"
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/arrow_right" />
+
+                        <TextView
+                            android:id="@+id/tv_hSearchDoctor"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_hRightArrow0"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:fontFamily="@font/avenir_nextitpro_bold"
+                            android:text="@string/hSearch"
+                            android:textSize="@dimen/_11ssp" />
+
+                        <TextView
+                            android:id="@+id/tv_hGetAppointment"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:fontFamily="@font/avenir_nextitpro_regular"
+                            android:text="Get Appointments"
+                            android:textSize="@dimen/_9ssp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_hDiagnostics"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_85sdp"
+                    android:layout_marginStart="@dimen/_13sdp"
+                    android:background="@drawable/ic_cardview_corner"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_hDiagnostics"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/iv_hDiagnostics"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/ic_diagnostics" />
+
+
+                        <ImageView
+                            android:id="@+id/iv_hRightArrow1"
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/arrow_right" />
+
+                        <TextView
+                            android:id="@+id/tv_hDiagnostics"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_hRightArrow1"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:fontFamily="@font/avenir_nextitpro_bold"
+                            android:text="Diagnostics"
+                            android:textSize="@dimen/_11ssp" />
+
+                        <TextView
+                            android:id="@+id/tv_hGet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:fontFamily="@font/avenir_nextitpro_regular"
+                            android:text="Get Tested"
+                            android:textSize="@dimen/_10ssp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_hLab"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_85sdp"
+                    android:layout_marginStart="@dimen/_13sdp"
+                    android:background="@drawable/ic_cardview_corner"
+                    android:padding="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_hLab"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/iv_hLab"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/ic_lab_investigations" />
+
+
+                        <ImageView
+                            android:id="@+id/iv_hRightArrow2"
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/arrow_right" />
+
+                        <TextView
+                            android:id="@+id/tv_hLab"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_hRightArrow2"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:fontFamily="@font/avenir_nextitpro_bold"
+                            android:text="Lab Investigation"
+                            android:textSize="@dimen/_11ssp" />
+
+                        <TextView
+                            android:id="@+id/tv_hGet1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:text="Get Tested"
+                            android:textSize="@dimen/_10ssp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/rl_hCardView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ll_hCardView0"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_hDischarge"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_85sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:background="@drawable/ic_cardview_corner"
+                    android:padding="@dimen/_1sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_hDischarge"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/iv_hDischarge"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/ic_discharge_reports" />
+
+
+                        <ImageView
+                            android:id="@+id/iv_hRightArrow3"
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/arrow_right" />
+
+                        <TextView
+                            android:id="@+id/tv_hDischarge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_hRightArrow3"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:fontFamily="@font/avenir_nextitpro_bold"
+                            android:text="Discharge Reports"
+                            android:textSize="@dimen/_11ssp" />
+
+                        <TextView
+                            android:id="@+id/tv_hDischarge1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:fontFamily="@font/avenir_nextitpro_regular"
+                            android:text="Discharges"
+                            android:textSize="@dimen/_10ssp" />
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_heRx"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_85sdp"
+                    android:layout_marginStart="@dimen/_13sdp"
+                    android:background="@drawable/ic_cardview_corner"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_heRx"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/iv_heRx"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/ic_erx" />
+
+
+                        <ImageView
+                            android:id="@+id/iv_hRightArrow4"
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/arrow_right" />
+
+                        <TextView
+                            android:id="@+id/tv_heRx"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_hRightArrow4"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:fontFamily="@font/avenir_nextitpro_bold"
+                            android:text="eRx"
+                            android:textSize="@dimen/_11ssp" />
+
+                        <TextView
+                            android:id="@+id/tv_hDigital"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:fontFamily="@font/avenir_nextitpro_regular"
+                            android:text="Digital Prescriptions"
+                            android:textSize="@dimen/_10ssp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_hHealth"
+                    android:layout_width="@dimen/_90sdp"
+                    android:layout_height="@dimen/_85sdp"
+                    android:layout_marginStart="@dimen/_13sdp"
+                    android:background="@drawable/ic_cardview_corner"
+                    android:padding="@dimen/_5sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_hHealth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/_5sdp">
+
+                        <ImageView
+                            android:id="@+id/iv_hHealth"
+                            android:layout_width="@dimen/_25sdp"
+                            android:layout_height="@dimen/_25sdp"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/ic_health_summary" />
+
+
+                        <ImageView
+                            android:id="@+id/iv_hRightArrow6"
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="@dimen/_5sdp"
+                            android:src="@drawable/arrow_right" />
+
+                        <TextView
+                            android:id="@+id/tv_hHealth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/iv_hRightArrow6"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:layout_marginTop="@dimen/_15sdp"
+                            android:fontFamily="@font/avenir_nextitpro_bold"
+                            android:text="Health Summary"
+                            android:textSize="@dimen/_11ssp" />
+
+                        <TextView
+                            android:id="@+id/tv_hHealth1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginStart="@dimen/_5sdp"
+                            android:fontFamily="@font/avenir_nextitpro_regular"
+                            android:text="Health Information"
+                            android:textSize="@dimen/_9ssp" />
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_hProfile0"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_hCardView1"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_hProfile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:background="@drawable/ic_cardview_corner"
+                    android:padding="@dimen/_1sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_hProfile"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/iv_hRightArrow7"
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:src="@drawable/arrow_right" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_hPp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/iv_hProfile"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:src="@drawable/ic_profile" />
+
+                            <TextView
+                                android:id="@+id/tv_hProfile"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@id/iv_hProfile"
+                                android:layout_marginStart="@dimen/_35sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:fontFamily="@font/avenir_nextitpro_bold"
+                                android:text="Profile"
+                                android:textSize="@dimen/_11ssp" />
+
+                            <TextView
+                                android:id="@+id/tv_hPersonal"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@id/tv_hProfile"
+                                android:layout_marginTop="@dimen/_20sdp"
+                                android:fontFamily="@font/avenir_nextitpro_regular"
+                                android:text="Personal Information"
+                                android:textSize="@dimen/_9ssp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_hFamily"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/rl_hProfile0"
+                android:layout_marginTop="@dimen/_15sdp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cv_hFamily"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_50sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
+                    android:layout_marginEnd="@dimen/_10sdp"
+                    android:layout_marginBottom="@dimen/_60sdp"
+                    android:background="@drawable/ic_cardview_corner"
+                    android:padding="@dimen/_1sdp"
+                    app:cardCornerRadius="@dimen/_5sdp">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_hFamily1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <ImageView
+                            android:id="@+id/iv_hRightArrow8"
+                            android:layout_width="@dimen/_16sdp"
+                            android:layout_height="@dimen/_16sdp"
+                            android:layout_alignParentEnd="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="@dimen/_5sdp"
+                            android:src="@drawable/arrow_right" />
+
+                        <RelativeLayout
+                            android:id="@+id/rl_hFy"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true">
+
+                            <ImageView
+                                android:id="@+id/iv_hFamily"
+                                android:layout_width="@dimen/_25sdp"
+                                android:layout_height="@dimen/_25sdp"
+                                android:layout_marginTop="@dimen/_10sdp"
+                                android:src="@drawable/ic_family_members" />
+
+                            <TextView
+                                android:id="@+id/tv_hFamily"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@id/iv_hFamily"
+                                android:layout_marginStart="@dimen/_35sdp"
+                                android:layout_marginTop="@dimen/_5sdp"
+                                android:fontFamily="@font/avenir_nextitpro_bold"
+                                android:text="Family Members"
+                                android:textSize="@dimen/_11ssp" />
+
+                            <TextView
+                                android:id="@+id/tv_hYour"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignStart="@id/tv_hFamily"
+                                android:layout_marginTop="@dimen/_20sdp"
+                                android:fontFamily="@font/avenir_nextitpro_regular"
+                                android:text="Your Relatives"
+                                android:textSize="@dimen/_9ssp" />
+                        </RelativeLayout>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+    <include
+        layout="@layout/design_bottom_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" />
+</RelativeLayout>

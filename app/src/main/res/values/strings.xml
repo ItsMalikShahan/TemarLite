@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Temardar Lite</string>
+    <string name="SignUp"><u>Sign Up</u></string>
+    <string name="Login">Log In To Acorns</string>
+    <string name="email">Email Address</string>
+    <string name="password">Password</string>
+    <string name="show"><u>Show</u></string>
+    <string name="login">Login</string>
+    <string name="forgot">Forgot Password?</string>
+    <string name="slogan">iHealthCure</string>
+    <string name="cnicPassport">Enter CNIC Number/Passport</string>
+    <string name="passwordl1"> Enter Password</string>
+    <string name="newUser">New User?</string>
+    <string name="createProfile">Create profile</string>
+    <string name="hHeading">Hi </string>
+    <string name="hCnic">CNIC No. <b>99999-9999999-9</b></string>
+    <string name="hAppointment">Appointment</string>
+    <string name="hPharmacy">Pharmacy</string>
+    <string name="hSearch">Search Doctor</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>
